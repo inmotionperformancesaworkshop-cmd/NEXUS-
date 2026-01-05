@@ -1,0 +1,5 @@
+{
+  "name": "Arcovel Nexus",
+  "description": "A deep-tech dashboard unifying multiple LLM intelligences (Gemini, Claude, GPT, Grok, DeepSeek, Copilot) to answer, cross-examine, and grade responses in a blind peer-review system.",
+  "requestFramePermissions": []
+}

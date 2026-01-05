@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Arcovel Nexus | Multi-Model Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@300;400;600;700&family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+              display: ['Orbitron', 'sans-serif'],
+            },
+            colors: {
+              arcovel: {
+                950: '#02040a', // Deepest space blue/black
+                900: '#0b1221', // Dark technical blue
+                800: '#15203b', // UI element background
+                700: '#233257', // Borders
+                
+                // Brand Orange (from logo text)
+                500: '#f97316', 
+                400: '#fb923c',
+                600: '#ea580c',
+
+                // Tech Blue Accent (from logo ring)
+                accent: '#0ea5e9', 
+                'accent-dim': '#0369a1',
+
+                success: '#10b981',
+                warning: '#f59e0b',
+                danger: '#ef4444',
+              }
+            },
+            animation: {
+              'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'spin-slow': 'spin 8s linear infinite',
+              'spin-reverse': 'spin 12s linear infinite reverse',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #02040a;
+        color: #e2e8f0;
+        background-image: radial-gradient(circle at 50% 0%, #15203b 0%, #02040a 70%);
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0b1221; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #233257; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #334155; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
